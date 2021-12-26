@@ -1,0 +1,12 @@
+menu:
+  Ana Sayfa: /
+  Arşiv: archives
+
+widgets:
+- search
+- category
+- tag
+
+excerpt_link: Daha fazla oku
+
+fancybox: true
