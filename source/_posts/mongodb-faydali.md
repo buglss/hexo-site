@@ -4,7 +4,7 @@ date: 2021-12-19 17:42:19
 tags: mongodb
 categories: Faydalı Bilgiler
 ---
-## Mongodb Servisini Enable/Startup Yapma
+# Mongodb Servisini Enable/Startup Yapma
 Enable/Startup olup olmadığını görmek için aşağıdaki komutu çalıştır.
 ### is-enabled
 ```bash
@@ -18,7 +18,7 @@ $ sudo systemctl enable mongod
 
 <!-- more -->
 
-## Temel Mongodb Servis Komutları
+# Temel Mongodb Servis Komutları
 ### status
 Servisin çalışma durumunu öğren.
 ```bash

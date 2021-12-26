@@ -4,32 +4,7 @@ date: 2021-12-19 17:19:15
 tags: mongodb
 categories: Kurulum
 ---
-## Ön Hazırlık (İsteğe Bağlı)
-<br />
-<details>
-<summary>Ön Hazırlık Adımları (Görüntülemek için Tıkla)</summary>
-
-Ubuntu işletim sistemine kurulum yapmadan önce isteğe bağlı genel bir hazırlık da yapabilirsiniz. Ben kurulumlardan önce bu hazırlık adımını yapmayı tercih ediyorum.
-
-İşletim sistemindeki paketler güncellenir ve gereksiz paketler otomatik temizlenir. İhtiyaç duyulan geliştirici paketleri kurulur.
-
-### Paketleri Güncelle ve Gereksizleri Temizle
-```bash
-$ sudo apt update
-$ sudo apt upgrade
-$ sudo apt autoremove
-$ sudo apt install build-essential
-```
-
-### Geliştirici(developer) Paketlerini Kur
-Geliştirici paketlerini daha önce kurduysanız aşağıdaki komutu çalıştırmanıza gerek yoktur.
-```bash
-$ sudo apt install build-essential
-```
-
-</details>
-
-## Mongodb Kurulumu
+# Mongodb Kurulumu
 ### Kurulum Adımı
 ```bash
 $ wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -

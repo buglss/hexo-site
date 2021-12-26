@@ -4,33 +4,7 @@ date: 2021-12-19 15:16:21
 tags: wordpress
 categories: Kurulum
 ---
-
-## Ön Hazırlık (İsteğe Bağlı)
-<br />
-<details>
-<summary>Ön Hazırlık Adımları (Görüntülemek için Tıkla)</summary>
-
-Ubuntu işletim sistemine kurulum yapmadan önce isteğe bağlı genel bir hazırlık da yapabilirsiniz. Ben kurulumlardan önce bu hazırlık adımını yapmayı tercih ediyorum.
-
-İşletim sistemindeki paketler güncellenir ve gereksiz paketler otomatik temizlenir. İhtiyaç duyulan geliştirici paketleri kurulur.
-
-### Paketleri Güncelle ve Gereksizleri Temizle
-```bash
-$ sudo apt update
-$ sudo apt upgrade
-$ sudo apt autoremove
-$ sudo apt install build-essential
-```
-
-### Geliştirici(developer) Paketlerini Kur
-Geliştirici paketlerini daha önce kurduysanız aşağıdaki komutu çalıştırmanıza gerek yoktur.
-```bash
-$ sudo apt install build-essential
-```
-
-</details>
-
-## Wordpress Kurulumu
+# Wordpress Kurulumu
 ### Kurulum Adımı
 HTTP sunucusu olarak apache kullanılmıştır. Apache, PHP, MySQL, Wordpress ve kullanışlı bazı paketlerin kurulumu yapılmaktadır.
 ```bash
