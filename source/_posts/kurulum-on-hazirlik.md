@@ -4,7 +4,7 @@ date: 2021-12-26 18:25:10
 tags: ubuntu
 categories: Kurulum
 ---
-# Ön Hazırlık
+## Ön Hazırlık
 
 Ubuntu işletim sistemine kurulum yapmadan önce isteğe bağlı genel bir hazırlık da yapabilirsiniz. Ben kurulumlardan önce bu hazırlık adımını yapmayı tercih ediyorum.
 

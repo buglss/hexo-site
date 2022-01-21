@@ -1,10 +1,10 @@
 ---
 title: Ubuntu için Wordpress Kurulumu
 date: 2021-12-19 15:16:21
-tags: wordpress
+tags: [wordpress, php, apache, mysql, ubuntu]
 categories: Kurulum
 ---
-# Wordpress Kurulumu
+## Wordpress Kurulumu
 ### Kurulum Adımı
 HTTP sunucusu olarak apache kullanılmıştır. Apache, PHP, MySQL, Wordpress ve kullanışlı bazı paketlerin kurulumu yapılmaktadır.
 ```bash

@@ -1,10 +1,10 @@
 ---
 title: Ubuntu için Nodejs Kurulumu
 date: 2021-12-19 17:02:05
-tags: nodejs
+tags: [nodejs, ubuntu]
 categories: Kurulum
 ---
-# Nodejs Kurulumu
+## Nodejs Kurulumu
 Nodejs'i ``nvm`` kütüphanesini kullanarak kurucaz.
 ### nvm Kurulumu
 Aşağıdaki komut nvm reposundaki master projeyi indirir. Ardından install.sh dosyasını çalıştırır.
