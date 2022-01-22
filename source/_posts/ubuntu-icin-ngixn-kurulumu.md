@@ -5,13 +5,13 @@ tags: [nginx, ubuntu]
 categories: Kurulum
 ---
 
-## Kurulum
+# Kurulum
 
 ```bash
 $ sudo apt install nginx
 ```
 
-## Loadbalancer
+# Loadbalancer
 
 Konfigürasyon amaca göre değişir. Aşağıdaki örnek konfigürasyon 3000 portunu dinleyen ve 3001,3002,3003,3004 portlarına loadbalance yapan ayardır. ``/etc/nginx/sites-available/default`` dosyasına aşağıdakileri ekle.
 

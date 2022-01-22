@@ -5,7 +5,7 @@ tags: [docker, ubuntu]
 categories: Kurulum
 ---
 
-## Temizlik
+# Temizlik
 
 Arkamızı toplayarak ilerlemek her zaman daha iyidir. Bu yüzden öncelikle işe mevcuttaki docker ile ilgili paketleri silmeyle 
 başla.
@@ -14,7 +14,7 @@ başla.
 $ sudo apt remove docker docker-engine docker.io containerd runc
 ```
 
-## Ön Kurulum
+# Ön Kurulum
 
 İhtiyaç duyulan paketlerin kurulmasına geç.
 
@@ -22,7 +22,7 @@ $ sudo apt remove docker docker-engine docker.io containerd runc
 $ sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
 ```
 
-## Repository Ekle
+# Repository Ekle
 
 Docker paket reposunu ekle. Repo erişimi için paket repo keyleri arasına docker reposunun keyin ekle. Sonrasında paket repoları arasına docker reposunu ekle.
 
@@ -35,7 +35,7 @@ $ sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 <!-- more -->
 
-## Docker Compose
+# Docker Compose
 
 Docker kurulumu peşine oldukça kullanışlı bulduğum Docker Compose aracını kur. Github reposundaki son versiyonunu işletim sistemine uygun şekilde ilgili dizin altına indir. docker-compose için çalıştırılabilme yetkisi ver. Kullanıcını docker grubuna ekle. 
 

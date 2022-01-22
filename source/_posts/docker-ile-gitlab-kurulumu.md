@@ -5,7 +5,7 @@ tags: [docker,gitlab]
 categories: Kurulum
 ---
 
-## SSH Port Ayarı
+# SSH Port Ayarı
 
 Gitlab 22 portunu kullandığı için işletim sisteminin ssh portunu 2222 olarak değiştir. ``/etc/ssh/sshd_config`` git.
 
@@ -16,7 +16,7 @@ Port 2222
 ...
 ```
 
-## Docker ile Çalıştır
+# Docker ile Çalıştır
 
 ```bash
 $ sudo docker run --detach --publish 443:443 --publish 80:80 --publish 22:22 --name gitlab --restart always --volume <path>/gitlab/config:/etc/gitlab --volume <path>/gitlab/logs:/var/log/gitlab --volume <path>/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce:latest
@@ -24,7 +24,7 @@ $ sudo docker run --detach --publish 443:443 --publish 80:80 --publish 22:22 --n
 
 <!-- more -->
 
-## Gitlab root Kullanıcı
+# Gitlab root Kullanıcı
 
 Gitlab konteynırına bağlan ve root parolasını resetle.
 
@@ -33,7 +33,7 @@ $ docker exec -it gitlab bash
 $ gitlab-rake "gitlab:password:reset[root]"
 ```
 
-## Konfigürasyon
+# Konfigürasyon
 
 Temel konfigürasyon ayarlarını yap. ``<path>/gitlab/config/gitlab.rb`` dosyasını aç. Aşağıdakiler uygula.
 
@@ -66,7 +66,7 @@ registry_external_url 'https://registry.<domain>.com'
 ...
 ```
 
-## SSL Sertifika
+# SSL Sertifika
 
 SSL sertifikalarını aktar. ``<path>/gitlab/config/ssl`` klasörünün içine git. ``<domain>.com.crt``, ``git.<domain>.com.key``, ``registry.<domain>.com.crt`` ve ``registry.<domain>.com.key`` isminde crt ve key dosyalarını at. Sonra gitlab konteynırına restart at.
 
@@ -74,7 +74,7 @@ SSL sertifikalarını aktar. ``<path>/gitlab/config/ssl`` klasörünün içine g
 $ docker restart gitlab
 ```
 
-## Bonus
+# Bonus
 
 Gitlab dosya ve dizinlerin sahipliklerinin olması gerektiği ayarlarda olması için aşağıdaki komutu çalıştırabilirsiniz. Olası bir sahiplik bozulmasında kullanılabilir.
 

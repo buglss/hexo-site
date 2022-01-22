@@ -4,8 +4,8 @@ date: 2021-12-19 17:19:15
 tags: [mongodb, ubuntu]
 categories: Kurulum
 ---
-## Mongodb Kurulumu
-### Kurulum Adımı
+# Mongodb Kurulumu
+## Kurulum Adımı
 
 Mongodb'nin 5.0 versiyonu için kurulum yapılmaktadır.
 
@@ -18,7 +18,7 @@ $ sudo apt install mongodb-org
 
 <!-- more -->
 
-### Kullanıcı Yapılandırması (İsteğe Bağlı)
+## Kullanıcı Yapılandırması (İsteğe Bağlı)
 Mongodb kullanmak için kullanıcı yapılandırması şart **değildir**. Güvenliği arttırmak adına kullanıcı yapılandırması yapılmalıdır. İsterseniz bu kısmı yapmadan da kullanmaya başlayabilirsiniz.
 
 Kullanıcı yapılandırması yapıldıktan sonra sadece kullanıcı ile veritabanına bağlanılabilir. Esnek çalışabilmek için öncelikle kapsamlı yetkiye sahip bir admin kullanıcısı oluşturulmalıdır.

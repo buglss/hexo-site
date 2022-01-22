@@ -7,7 +7,7 @@ categories: Wiki
 
 Oyun geliştirme sürecinde rol alan kişileri anlatmaya çalıştım.
 
-### Başlıklar:
+## Başlıklar:
 1. [Yapımcı](#1-Yapimci)
 2. [Senarist](#2-Senarist)
 3. [Konsept Sanatçısı](#3-Konsept-Sanatcisi)

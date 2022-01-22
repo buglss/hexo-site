@@ -4,8 +4,7 @@ date: 2021-12-19 15:16:21
 tags: [wordpress, php, apache, mysql, ubuntu]
 categories: Kurulum
 ---
-## Wordpress Kurulumu
-### Kurulum Adımı
+# Kurulum Adımı
 HTTP sunucusu olarak apache kullanılmıştır. Apache, PHP, MySQL, Wordpress ve kullanışlı bazı paketlerin kurulumu yapılmaktadır.
 ```bash
 $ sudo apt install apache2 wordpress ghostscript libapache2-mod-php mysql-server php php-mysql php-ldap php-curl php-xml php-mbstring php-imagick php-zip php-bcmath php-intl php-json
@@ -13,7 +12,7 @@ $ sudo apt install apache2 wordpress ghostscript libapache2-mod-php mysql-server
 
 <!-- more -->
 
-### Apache Yapılandırması
+# Apache Yapılandırması
 Apache mod_rewrite modülünü aktif hale getir. Ardından apache servisini yeniden başlat.
 ```bash
 $ sudo a2enmod rewrite
@@ -61,7 +60,7 @@ Apache'nin wordpress dosyalarını kullanabilmesi için ``www-data`` kullanıcı
 $ sudo chown -R www-data:www-data /var/www/html/<FOLDER_NAME>
 ```
 
-### MySQL Yapılandırması
+# MySQL Yapılandırması
 root kullanıcısı ile veritabanına bağlan.
 ```bash
 $ sudo mysql -u root
