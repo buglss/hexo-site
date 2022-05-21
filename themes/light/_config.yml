@@ -5,9 +5,31 @@ menu:
 
 widgets:
 - search
+- social
+- tagcloud
+- recent_posts
 - category
 - tag
 
 excerpt_link: Daha fazla oku
 
-fancybox: true
+fancybox: false
+
+addthis:
+  enable: false
+  pubid:
+  facebook: true
+  twitter: true
+  google: true
+  pinterest: true
+
+comment_provider: #facebook
+# Facebook comment
+facebook:
+  appid: 123456789012345
+  comment_count: 5
+  comment_width: 840
+  comment_colorscheme: light
+
+google_analytics:
+rss:
