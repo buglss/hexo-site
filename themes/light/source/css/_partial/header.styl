@@ -1,6 +1,8 @@
 #header
   text-shadow 0 0 1px #fff
   margin 2.5rem auto
+  @media screen and (max-width: 600px)
+    margin 1rem auto
   a
     color color-ligth
     &:hover
@@ -21,9 +23,12 @@
   #main-nav
     font-family font-title
     line-height 2.5em
-    margin 1rem 0
+    margin .5rem 0
+    padding .5rem 0
+    @media screen and (max-width: 600px)
+      border-top 1px solid color-border
     ul
       list-style none
       li
-        float left
-        margin-left 30px
+        display inline-block
+        margin 0 15px
