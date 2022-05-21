@@ -1,0 +1,35 @@
+<div id="wholepage">
+    <nav class="slider-menu">
+        <ul>
+            <li>
+                <a href="/"><span class="icon icon-home text-light"></span></a>
+            </li>
+            <li>
+                <a href="/folios"><span class="icon icon-back text-light"></span></a>
+            </li>
+        </ul>
+    </nav>
+    
+    <% getSections(page.content).forEach(function(sec){ %>
+        <section>
+            <% getPages(sec).forEach(function(p){ %>
+                <div class="page">
+                    <%- p %> 
+                </div>
+            <% }); %>
+        </section>
+    <% }); %>
+
+</div>
+
+<%- js('js/slider.js') %>
+<script>
+    new WholePageSlider({
+        colors: [
+            '#7FDBDA',
+            '#ADE498',
+            '#EDE682',
+            '#FEBF63'
+        ]
+    })
+</script>

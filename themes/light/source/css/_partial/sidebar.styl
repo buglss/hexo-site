@@ -5,17 +5,32 @@
     float none
     width 100%
   .widget
-    border-right 5px solid color-meta
+    border-right 2px solid color-meta
+    border-left 2px solid color-meta
     border-radius radius-size
     background #fff
     box-shadow 1px 2px 3px #ddd
     margin-bottom 30px
     word-wrap break-word
+    .icon
+        color color-meta
+        margin-right 5px
     .title
       padding 15px 20px
       font-size 1em
       border-bottom 1px solid color-border
       font-weight normal
+      &.categories
+        .icon
+          &:before
+            font icon-size--small font-icon
+            content '\f00b'
+      &.tags
+        .icon
+          &:before
+            font icon-size--small font-icon
+            content '\f02c'
+
 
     .entry
       font-size 0.9em

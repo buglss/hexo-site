@@ -6,6 +6,7 @@ color-border = #ddd
 color-link = #258fb8
 color-title = #FD6F96
 color-subtitle = #39A6A3
+color-ligth = #818181
 
 // Font
 font-default = "Helvetica Neue", "Helvetica", Arial, sans-serif
@@ -23,7 +24,12 @@ font-icon-path = 'font/fontawesome-webfont'
   font-family 'FontAwesome'
   font-style normal
   font-weight normal
-  src url(font-icon-path.eot?#iefix) format('embedded-opentype'), url(font-icon-path.woff) format('woff'), url(font-icon-path.ttf) format('truetype'), url(font-icon-path.svg#FontAwesomeRegular) format('svg')
+  src url(font-icon-path.eot?#iefix) format('embedded-opentype'), 
+      url(font-icon-path.otf) format('opentype'), 
+      url(font-icon-path.svg#FontAwesomeRegular) format('svg'),
+      url(font-icon-path.ttf) format('truetype'),
+      url(font-icon-path.woff) format('woff'),
+      url(font-icon-path.woff2) format('woff2')
 }
 
 // Width
@@ -31,3 +37,8 @@ page-width = 1200px
 
 // Border Radius
 radius-size = .5rem
+
+// Icon
+icon-size = 32px
+icon-size--small = 0.9em
+icon-gap = 25px

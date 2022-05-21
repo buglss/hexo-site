@@ -1,28 +1,26 @@
-#pagination
-  a
-    display block
-    padding 5px 10px
-    background color-border
-    color color-meta
-    font-family font-title
-    text-shadow 0 0 1px #fff
-    margin-bottom 50px
-    border-radius radius-size
-    font-size font-size-base
-    &:hover
-      background color-link
-      color #fff
-      text-decoration none
-      text-shadow none
-
-  .prev
-    &:before
-      content '\f053'
-      padding-right 10px
-      font-family font-icon
-
-  .next
-    &:after
-      content '\f054'
-      padding-left 10px
-      font-family font-icon
+#paginationWrapper
+  margin 0 auto
+  display block
+  #pagination
+    margin 0
+    padding 0
+    text-align center
+    li
+      display inline
+      a
+        display inline-block
+        text-decoration none
+        padding 5px 10px
+        color color-meta
+        font-family font-title
+        text-shadow 0 0 1px #fff
+        margin-bottom 50px
+        border-radius radius-size
+        font-size font-size-base
+        transition background-color 0.3s
+        &:hover:not(.active)
+          background color-meta
+          color #fff
+      a.active
+        background-color color-meta
+        color #fff

@@ -1,6 +1,7 @@
 menu:
   Ana Sayfa: /
   Arşiv: archives
+  Folyolar: folios
 
 widgets:
 - search

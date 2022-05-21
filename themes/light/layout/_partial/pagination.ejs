@@ -1,9 +1,35 @@
-<nav id="pagination">
-  <% if (page.prev){ %>
-    <a href="<%- url_for(page.prev_link) %>" class="alignleft prev"><%= __('prev') %></a>
-  <% } %>
-  <% if (page.next){ %>
-    <a href="<%- url_for(page.next_link) %>" class="alignright next"><%= __('next') %></a>
-  <% } %>
+<% var pagePath = (url_for(page.current_url).match(/^(\/.*?\/)|(\/.*)/) || [])[0].replace('/page', '') %> 
+
+<nav id="paginationWrapper">
+  <ul id="pagination">
+    <% if (page.prev){ %> <li><a href="<%- url_for(page.prev_link) %>">«</a></li> <% } %>
+    
+    <% for (var i=1, n=Math.min(page.total, 5), t=page.total; i <= n; i++){ %>
+      <% if (page.current >= 5){ %>
+          <% if (i === 1){ %>
+            <li class="page-number"><a id="num1" href="<%= pagePath %>">1</a></li>
+            <li>...</li>
+            <% i = page.current - 2; n = Math.min(n + page.current - 3, t) %>
+          <% } %>
+          <li class="page-number"><a id="num<%= i %>" href="<%= pagePath + (i === 1 ? '' : 'page/' + i)%>"><%= i %></a></li>
+      <% } else { %>
+        <li class="page-number"><a id="num<%= i %>" href="<%= pagePath + (i === 1 ? '' : 'page/' + i)%>"><%= i %></a></li>
+        <% } %>
+        <% if (i === n && i < t && n !== t){ %>
+          <% if (n !== t - 1){ %> <li>...</li> <% } %>
+          <li class="page-number"><a id="num<%= t %>" href="<%= pagePath + 'page/' + t %>"><%= t %></a></li>
+        <% } %>
+      <% } %>
+
+      <% if (page.next){ %> <li><a href="<%- url_for(page.next_link) %>">»</a></li> <% } %>
+  </ul>
   <div class="clearfix"></div>
 </nav>
+
+<%- js('js/jquery-3.4.1.min.js') %>
+  <script>
+    (function($) {
+      var pageNumber = (window.location.pathname.match(/\d/g) || []).join("")
+      $("#num" + (pageNumber || "1")).addClass("active")
+    })(jQuery)
+  </script>
