@@ -111,4 +111,4 @@ deploy:
 ## Docs: https://junonguyen.herokuapp.com/2016/01/22/How-to-create-Local-Search-Engine-for-your-blog-with-hexo-generate-search-plugin/
 search:
 	path: search.xml
-  field: post
+  field: all
