@@ -225,8 +225,26 @@ article
     iframe
       border none
 
+    #main-nav
+      font-family font-title
+      line-height 2.5em
+      margin .5rem 0
+      padding .5rem 0
+      @media screen and (max-width: 600px)
+        border-top 1px solid color-border
+      ul
+        list-style none
+        li
+          display inline-block
+          margin 0 15px
+      a
+        color color-ligth
+        &:hover, &.active
+          color color-link
+          text-decoration none
+
     .caption
-      display block
+      display none
       margin-top 5px
       color color-meta
       position relative

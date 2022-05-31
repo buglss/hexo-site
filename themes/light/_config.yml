@@ -2,6 +2,7 @@ menu:
   Ana Sayfa: /
   Arşiv: archives
   Folyolar: folios
+  npm: npm
 
 widgets:
 - search
