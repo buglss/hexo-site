@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Yazılarım
+title: Yayınlarım
 subtitle: Levent Sencer Şahin | buglss
 description: Kişisel Blog Sitesi
-keywords: buglss, blog, nodejs, ubuntu, bash, mongodb, javascript, node-red, pm2, oyun, unity, wordpress, python, web developer, data scientist, web geliştirici, veri bilimcisi
+keywords: buglss, blog, nodejs, ubuntu, bash, mongodb, javascript, node-red, pm2, oyun, unity, wordpress, python, web developer, data scientist, web geliştirici, veri bilimcisi, npm, apache, nginx
 author: Levent Sencer Şahin | buglss
 language: tr
 timezone: 'Asia/Istanbul'
