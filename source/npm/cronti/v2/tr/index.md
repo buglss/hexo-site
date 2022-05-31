@@ -15,8 +15,6 @@ date: 2022-05-31 08:34:40
 
 ![nodejs](https://img.shields.io/badge/nodejs-43853d?logo=nodedotjs&labelColor=fff) ![npm](https://img.shields.io/badge/npm-bc2c32?logo=npm&labelColor=fff) ![javascript](https://img.shields.io/badge/javascript-e9d961?logo=javascript&labelColor=000) ![mocha](https://img.shields.io/badge/mocha-8d6849?logo=mocha&labelColor=fff) [![License](https://img.shields.io/badge/License-GPL--3.0-red)](LICENSE) [![vulnerabilities](https://snyk.io/test/github/buglss/cronti/badge.svg)](https://snyk.io/test/github/buglss/cronti/)
 
-[![NPM](https://nodei.co/npm/cronti.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/cronti/)
-
 # Giriş
 
 Zamanlanmış işleri yapmak için crontime ifadelerini bilmeniz gerekir. Ancak bu paket sizi bu zahmetten kurtarıyor. Günlük hayatta kullanılan zamanlama ifadeleri ile crontime ifadeleri oluşturabilirsiniz. Ürettiğiniz bu crontime ifadesini zamanlanmış bir iş oluşturmak için kullanabilirsiniz. Geçerli bir crontime ifadesi döndürülür.
