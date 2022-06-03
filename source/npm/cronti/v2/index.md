@@ -39,7 +39,7 @@ Note: add `--save` if you are using npm < 5.0.0
 
 In Demo:
 
-[Demo project download (zip)](http://localhost:4000/npm/cronti/demo/publish/demo.zip?raw=true). Extract the project files from zip. Go to project directory. Execute ``index.js`` file by **nodejs**.
+[Demo project download (zip)](https://github.com/buglss/cronti/blob/master/demo/publish/demo.zip?raw=true). Extract the project files from zip. Go to project directory. Execute ``index.js`` file by **nodejs**.
 
 ```bash
 unzip demo.zip
@@ -97,6 +97,7 @@ cronti(0, new Date("2022-05-26 12:30"))
 /* Create crontime with various combinations of month, week, weekdays, time and tick parameters.  
  * Attention! The crontime expression change according to the time they were created. The time to be tested is 27.05.2022.
 */
+/* - First day of week is Monday - */
 cronti("onTime", "4M", "2W")
 /* - OR - */
 cronti(3, "4M", "2W")
@@ -111,11 +112,28 @@ cronti("onTime", "3M", "1WD")
 /* - OR - */
 cronti(3, "3M", "1WD")
 /* returns "30 12 * 4 1" */
+/* ---------------------------------------------------- */
+/* - First day of week is Sunday - */
+cronti("onTime", "0FD", "4M", "2W")
+/* - OR - */
+cronti(3, "0FD", "4M", "2W")
+/* returns "30 12 14-20 5-5 *" */
+/* ---------------------------------------------------- */
+cronti("onTime", "0FD", "4M", "2W", "3WD")
+/* - OR - */
+cronti(3, "0FD", "4M", "2W", "3WD")
+/* returns "30 12 17 5 *" */
+/* ---------------------------------------------------- */
+cronti("onTime", "0FD", "3M", "1WD")
+/* - OR - */
+cronti(3, "0FD", "3M", "1WD")
+/* returns "30 12 * 4 1" */
 /* ************************************************************************ */
 
 /* Generates the cron time for the week the date is in.
  * Attention! The crontime expression change according to the time they were created. The time to be tested is 27.05.2022.
 */
+/* - First day of week is Monday - */
 cronti("onWeek", "2022-05-26T09:30:00.000Z")
 /* - OR - */
 cronti("onWeek", new Date("2022-05-26 12:30"))
@@ -124,6 +142,16 @@ cronti(1, "2022-05-26T09:30:00.000Z")
 /* - OR - */
 cronti(1, new Date("2022-05-26 12:30"))
 /* returns "30 12 22-28 5-5 *" */
+/* ---------------------------------------------------- */
+/* - First day of week is Sunday - */
+cronti("onWeek", "2022-05-26T09:30:00.000Z", "0FD")
+/* - OR - */
+cronti("onWeek", new Date("2022-05-26 12:30"), "0FD")
+/* - OR - */
+cronti(1, "2022-05-26T09:30:00.000Z", "0FD")
+/* - OR - */
+cronti(1, new Date("2022-05-26 12:30"), "0FD")
+/* returns "30 12 21-27 5-5 *" */
 /* ************************************************************************ */
 ```
 
@@ -325,13 +353,14 @@ A parameter can be sent with a valid month, week, weekdays value. Time parameter
 
 #### Input
 
-|     Parameter     |      Type       | Required |                                        Description                                        |
-| :---------------: | :-------------: | :------: | :---------------------------------------------------------------------------------------: |
-|  args.\<month\>   |     Number      |  false   |                           Month(0..11) for crontime expression                            |
-|   args.\<week\>   |     Number      |  false   |                          Week(0,1,2,-1) for crontime expression                           |
-| args.\<weekDays\> |     Number      |  false   |                          Weekdays(0..6) for crontime expression                           |
-|   args.\<time\>   | String <dd\:mm> |  false   |                            Time(dd:mm) for crontime expression                            |
-|   args.\<tick\>   |     Number      |  false   | The number of days to subtract from the date. Month and week required parameters for tick |
+| Parameter                  | Type              | Required | Description                                                                                            |
+|:--------------------------:|:-----------------:|:--------:|:------------------------------------------------------------------------------------------------------:|
+| args.\<month\>             | String <..M>      | false    | Month for crontime expression. It takes values between 0 and 11. It takes value <digit>M               |
+| args.\<week\>              | String <..W>      | false    | Week for crontime expression. It takes values 0, 1, 2 and -1. It takes value <digit>W.                 |
+| args.\<weekDays\>          | String <..WD>     | false    | Weekdays for crontime expression. It takes values between 0 and 6. It takes value <digit>WD.           |
+| args.\<time\>              | String <dd\:mm>   | false    | Time(dd:mm) for crontime expression                                                                    |
+| args.\<tick\>              | Number            | false    | The number of days to subtract from the date. Month and week required parameters for tick              |
+| args.\<firstDayOfWeek\>    | String            | false    | First day of week. It takes values between 0 and 6. It takes value <digit>FD. Default value is monday  |
 
 #### Output
 
@@ -397,6 +426,60 @@ cronti("onTime", "2M", "09:45")
 /* - OR - */
 cronti(3, "2M", "09:45")
 // => "45 09 * 3 *"
+
+// ! The crontime expression change according to the time they were created. The time to be tested is 27.05.2022.
+cronti("onTime", "0FD", "4M", "2W")
+/* - OR - */
+cronti(3, "0FD", "4M", "2W")
+// => "30 12 14-20 5-5 *"
+
+// ! The crontime expression change according to the time they were created. The time to be tested is 27.05.2022.
+cronti("onTime", "0FD", "4M", "2W", "3WD")
+/* - OR - */
+cronti(3, "0FD", "4M", "2W", "3WD")
+// => "30 12 17 5 *"
+
+// ! The crontime expression change according to the time they were created. The time to be tested is 27.05.2022.
+cronti("onTime", "0FD", "0W")
+/* - OR - */
+cronti(3, "0FD", "0W")
+// => "30 12 1-7 * *"
+
+// ! The crontime expression change according to the time they were created. The time to be tested is 27.05.2022.
+cronti("onTime", "0FD", "2M")
+/* - OR - */
+cronti(3, "0FD", "2M")
+// => "30 12 * 3 *"
+
+// ! The crontime expression change according to the time they were created. The time to be tested is 27.05.2022.
+cronti("onTime", "0FD", "6WD")
+/* - OR - */
+cronti(3, "0FD", "6WD")
+// => "30 12 * * 6"
+
+// ! The crontime expression change according to the time they were created. The time to be tested is 27.05.2022.
+cronti("onTime", "0FD", "3M", "1WD")
+/* - OR - */
+cronti(3, "0FD", "3M", "1WD")
+// => "30 12 * 4 1"
+
+// ! The crontime expression change according to the time they were created. The time to be tested is 27.05.2022.
+cronti("onTime", "0FD")
+/* - OR - */
+cronti(3, "0FD")
+// => "30 12 * * *"
+
+// ! The crontime expression change according to the time they were created. The time to be tested is 27.05.2022.
+cronti("onTime", "0FD", "4M", "2W", 1)
+/* - OR - */
+cronti(3, "0FD", "4M", "2W", 1)
+// => "30 12 13-20 5-5 *"
+
+// ! The crontime expression change according to the time they were created. The time to be tested is 27.05.2022.
+cronti("onTime", "0FD", "2M", "09:45")
+/* - OR - */
+cronti(3, "0FD", "2M", "09:45")
+// => "45 09 * 3 *"
 ```
 
 ## onWeek
@@ -408,10 +491,11 @@ A valid date value must be sent as a parameter. Any numeric value can be used fo
 
 #### Input
 
-|   Parameter   |  Type  | Required |                 Description                  |
-| :-----------: | :----: | :------: | :------------------------------------------: |
-| args.\<date\> |  Date  |   true   |   Date of the week for crontime expression   |
-| args.\<tick\> | Number |  false   | The number of days to subtract from the date |
+| Parameter                 | Type                  | Required | Description                                                                                            |
+|:-------------------------:|:---------------------:|:--------:|:------------------------------------------------------------------------------------------------------:|
+| args.\<date\>             | Date                  | true     | Date of the week for crontime expression                                                               |
+| args.\<tick\>             | Number                | false    | The number of days to subtract from the date                                                           |
+| args.\<firstDayOfWeek\>   | String                | false    | First day of week. It takes values between 0 and 6. It takes value <digit>FD. Default value is monday  |
 
 #### Output
 
@@ -433,6 +517,16 @@ cronti("onWeek", "2022-05-26T09:30:00.000Z", 2)
 /* - OR - */
 cronti(1, "2022-05-26T09:30:00.000Z", 2)
 // => "30 12 20-28 5-5 *"
+
+cronti("onWeek", "2022-05-26T09:30:00.000Z", "0FD")
+/* - OR - */
+cronti(1, "2022-05-26T09:30:00.000Z", "0FD")
+// => "30 12 21-27 5-5 *"
+
+cronti("onWeek", "2022-05-26T09:30:00.000Z", 2, "0FD")
+/* - OR - */
+cronti(1, "2022-05-26T09:30:00.000Z", 2, "0FD")
+// => "30 12 19-27 5-5 *"
 ```
 
 # Authors

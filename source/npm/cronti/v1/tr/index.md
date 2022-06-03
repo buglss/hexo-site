@@ -40,7 +40,7 @@ Not: Eğer npm versiyonunuz 5.0.0'dan küçükse `--save` argumanı ekleyin.
 
 Demo'da:
 
-[Demo projesini indir (rar)](http://localhost:4000/npm/cronti/demo/publish/demo.zip?raw=true). Proje dosyalarını rar'dan çıkar. Proje dizinine git. Nodejs ile ``index.js`` dosyasını çalıştır.
+[Demo projesini indir (rar)](https://github.com/buglss/cronti/blob/master/demo/publish/demo.zip?raw=true). Proje dosyalarını rar'dan çıkar. Proje dizinine git. Nodejs ile ``index.js`` dosyasını çalıştır.
 
 ```bash
 unrar e demo.rar

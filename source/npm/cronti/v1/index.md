@@ -39,7 +39,7 @@ Note: add `--save` if you are using npm < 5.0.0
 
 In Demo:
 
-[Demo project download (rar)](http://localhost:4000/npm/cronti/demo/publish/demo.zip?raw=true). Extract the project files from rar. Go to project directory. Execute ``index.js`` file by **nodejs**.
+[Demo project download (rar)](https://github.com/buglss/cronti/blob/master/demo/publish/demo.zip?raw=true). Extract the project files from rar. Go to project directory. Execute ``index.js`` file by **nodejs**.
 
 ```bash
 unrar e demo.rar
