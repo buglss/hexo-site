@@ -271,6 +271,7 @@ tick değerine göre girilen tarihten önce tetiklenecek olan crontime ifadesi d
 | options.weekDays              | Number            | hayır    | Crontime ifadesi için haftanın günleri (0..6)                                      |
 | options.time                  | String <dd\:mm>   | hayır    | Crontime ifadesi için zaman(gg:dd)                                                 |
 | options.tick                  | Number            | hayır    | Tarihten çıkarılacak gün sayısı. Ay ve hafta parametreleri olmak zorundadır        |
+| options.firstDayOfWeek        | Number            | hayır    | Haftanın ilk günü. 0 ile 6 arasında değerler alır. Varsayılan değer pazartesidir   |
 
 #### Çıktı
 
@@ -327,10 +328,11 @@ tick değerine göre girilen tarihten önce tetiklenecek olan crontime ifadesi d
 
 #### Girdi
 
-| Parametre     | Tip                  | Zorunluluk | Açıklama                              |
-|:-------------:|:--------------------:|:--------:|:---------------------------------------:|
-| date          | Date                 | evet     | Crontime ifadesi için haftanın tarihi   |
-| tick          | Number               | hayır    | Tarihten çıkarılacak gün sayıs          |
+| Parametre        | Tip                  | Zorunluluk | Açıklama                                                                           |
+|:----------------:|:--------------------:|:--------:|:------------------------------------------------------------------------------------:|
+| date             | Date                 | evet     | Crontime ifadesi için haftanın tarihi                                                |
+| tick             | Number               | hayır    | Tarihten çıkarılacak gün sayıs                                                       |
+| firstDayOfWeek   | Number               | hayır    | Haftanın ilk günü. 0 ile 6 arasında değerler alır. Varsayılan değer pazartesidir     |
 
 #### Çıktı
 

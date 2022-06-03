@@ -39,7 +39,7 @@ Note: add `--save` if you are using npm < 5.0.0
 
 In Demo:
 
-[Demo project download (rar)](https://github.com/buglss/cronti/blob/master/demo/publish/demo.zip?raw=true). Extract the project files from rar. Go to project directory. Execute ``index.js`` file by **nodejs**.
+[Demo project download (rar)](https://github.com/buglss/cronti/blob/v1.0.9/demo/publish/demo.rar?raw=true). Extract the project files from rar. Go to project directory. Execute ``index.js`` file by **nodejs**.
 
 ```bash
 unrar e demo.rar
@@ -270,6 +270,7 @@ The crontime expression that will be triggered before the entered date according
 | options.weekDays              | Number            | false    | Weekdays(0..6) for crontime expression                                                      |
 | options.time                  | String <dd\:mm>   | false    | Time(dd:mm) for crontime expression                                                         |
 | options.tick                  | Number            | false    | The number of days to subtract from the date. Month and week required parameters for tick   |
+| options.firstDayOfWeek        | Number            | false    | First day of week. It takes values between 0 and 6. Default value is monday                 |
 
 #### Output
 
@@ -326,10 +327,11 @@ The crontime expression that will be triggered before the entered date based on 
 
 #### Input
 
-| Parameter     | Type                  | Required | Description                                      |
-|:-------------:|:---------------------:|:--------:|:------------------------------------------------:|
-| date          | Date                  | true     | Date of the week for crontime expression         |
-| tick          | Number                | false    | The number of days to subtract from the date     |
+| Parameter       | Type                  | Required | Description                                                                     |
+|:---------------:|:---------------------:|:--------:|:-------------------------------------------------------------------------------:|
+| date            | Date                  | true     | Date of the week for crontime expression                                        |
+| tick            | Number                | false    | The number of days to subtract from the date                                    |
+| firstDayOfWeek  | Number                | false    | First day of week. It takes values between 0 and 6. Default value is monday     |
 
 #### Output
 
