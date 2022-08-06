@@ -5,7 +5,6 @@ menu:
   npm: npm
 
 widgets:
-- adsense
 - search
 - social
 - tagcloud
