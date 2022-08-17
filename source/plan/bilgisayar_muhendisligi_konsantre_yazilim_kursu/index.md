@@ -1,5 +1,5 @@
 ---
-title: Plan
+title: Bilgisayar Mühendisliği Konsantre Yazılım Kursu
 date: 2022-08-17 08:05:32
 ---
 
