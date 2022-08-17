@@ -3,6 +3,7 @@ menu:
   Arşiv: archives
   Folyolar: folios
   npm: npm
+  Plan: plan
 
 widgets:
 - search
