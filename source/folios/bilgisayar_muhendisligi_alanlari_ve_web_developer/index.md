@@ -15,7 +15,7 @@ date: 2022-05-21 10:49:40
 <div class="container-fluid">
 <div class="row row-no-gutters">
     <div class="col-md-3">
-        <div class="p-2 m-t-2">
+        <div class="p-2 mt-2">
             <div class="img-responsive text-center">
                 <img src="/img/folio/software-developer.jpg" class="h-md-4" />
             </div>
@@ -23,7 +23,7 @@ date: 2022-05-21 10:49:40
         </div>
     </div>
     <div class="col-md-3">
-        <div class="p-2 m-t-2">
+        <div class="p-2 mt-2">
             <div class="img-responsive text-center">
                 <img src="/img/folio/hardware-developer.jpg" class="h-md-4" />
             </div>
@@ -31,7 +31,7 @@ date: 2022-05-21 10:49:40
         </div>
     </div>
     <div class="col-md-3">
-        <div class="p-2 m-t-2">
+        <div class="p-2 mt-2">
             <div class="img-responsive text-center">
                 <img src="/img/folio/system-administrator.jpg" class="h-md-4" />
             </div>
@@ -39,7 +39,7 @@ date: 2022-05-21 10:49:40
         </div>
     </div>
     <div class="col-md-3">
-        <div class="p-2 m-t-2">
+        <div class="p-2 mt-2">
             <div class="img-responsive text-center">
                 <img src="/img/folio/network-administrator.jpg" class="h-md-4" />
             </div>

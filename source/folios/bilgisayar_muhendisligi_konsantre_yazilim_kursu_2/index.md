@@ -15,7 +15,7 @@ date: 2022-09-08 21:25:40
 <div class="container-fluid">
 <div class="row row-no-gutters">
     <div class="col-md-4">
-        <div class="p-2 m-t-2">
+        <div class="p-2 mt-2">
             <div class="img-responsive text-center">
                 <img src="/img/folio/data_types.jpg" class="h-md-4" />
             </div>
@@ -69,14 +69,14 @@ date: 2022-09-08 21:25:40
 <div class="container-fluid">
 <div class="row row-no-gutters">
     <div class="col-md-4">
-        <div class="p-2 m-t-2">
+        <div class="p-2 mt-2">
             <div class="img-responsive text-center">
                 <img src="/img/folio/variables.jpg" class="h-md-4" />
             </div>
         </div>
     </div>
     <div class="col-md-8">
-        <div class="p-2 m-t-2">
+        <div class="p-2 mt-2">
             <h3><i class="icon icon-right"></i> Değer saklayan bellekler</h3>
             <h3><i class="icon icon-right"></i> İçini doldurup boşalttığınız kutular gibi</h3>
             <hr />
@@ -108,14 +108,14 @@ date: 2022-09-08 21:25:40
 <div class="container-fluid">
 <div class="row row-no-gutters">
     <div class="col-md-4">
-        <div class="p-2 m-t-2">
+        <div class="p-2 mt-2">
             <div class="img-responsive text-center">
                 <img src="/img/folio/operator.jpg" class="h-md-4" />
             </div>
         </div>
     </div>
     <div class="col-md-8">
-        <div class="p-2 m-t-2">
+        <div class="p-2 mt-2">
             <h3><i class="icon icon-right"></i> İşlem yaptırmak için kullanılan sembollerdir</h3>
             <h3><i class="icon icon-right"></i> Sağına veya soluna değer koyarak sonuç elde edilir</h3>
             <hr />
@@ -148,14 +148,14 @@ date: 2022-09-08 21:25:40
 <div class="container-fluid">
 <div class="row row-no-gutters">
     <div class="col-md-4">
-        <div class="p-2 m-t-2">
+        <div class="p-2 mt-2">
             <div class="img-responsive text-center">
                 <img src="/img/folio/condition.jpg" class="h-md-4" />
             </div>
         </div>
     </div>
     <div class="col-md-8">
-        <div class="p-2 m-t-2">
+        <div class="p-2 mt-2">
             <h3><i class="icon icon-right"></i> Yön seçiminde kullanılır</h3>
             <h3><i class="icon icon-right"></i> Alternatifler arası tercih yapabilmek için varlar</h3>
             <hr />
@@ -185,14 +185,14 @@ date: 2022-09-08 21:25:40
 <div class="container-fluid">
 <div class="row row-no-gutters">
     <div class="col-md-4">
-        <div class="p-2 m-t-2">
+        <div class="p-2 mt-2">
             <div class="img-responsive text-center">
                 <img src="/img/folio/cycle.jpg" class="h-md-4" />
             </div>
         </div>
     </div>
     <div class="col-md-8">
-        <div class="p-2 m-t-2">
+        <div class="p-2 mt-2">
             <h3><i class="icon icon-right"></i> Tekrar eden işlemlerdir</h3>
             <h3><i class="icon icon-right"></i> Tekrarın ne zamana kadar devam edeceği belirtilir</h3>
             <h3><i class="icon icon-right"></i> Aynı işlem birden çok kez yaptırılır</h3>
