@@ -2,7 +2,7 @@
 title: Windows VSCode SSH config Erişim Problemi
 date: 2022-01-25 21:41:00
 tags: [windows, vscode]
-categories: Haydalı Bilgiler
+categories: İşletim Sistemi
 ---
 
 # ...Bad Owner or Permissions on username.ssh\config...

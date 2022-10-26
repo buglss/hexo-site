@@ -5,7 +5,11 @@ tags: oAuth
 categories: Wiki
 ---
 
+![oAuth Flow Gif](/img/oauth.gif)
+
 #### {C} => Client, {S} => Server, {FQDN} => Hizmet Sağlayıcı
+
+<!-- more -->
 
 Sırasıyla aşağıdaki gibidir.
 
@@ -17,7 +21,3 @@ Sırasıyla aşağıdaki gibidir.
 6. ``Server``: {"ID": **\<USER_ID\>**, "user_login": **\<USERNAME\>**, "user_nicename": **\<USER_NICENAME\>**, "user_email": **\<USER_EMAIL\>**, "user_registered": **\<USER_REGISTERED\>**, "user_status": **\<USER_STATUS\>**, "display_name": **\<USER_DISPLAY_NAME\>**} response objesi ile kullanıcı bilgilerine ulaştın.
 7. ``Server``: Kullanıcı login başarılı. Webview olduğu için response olarak html dön. Başarılı olduğuna dair bir yazı olabilir. Tablette gitmesi gereken sayfaya doğrudan yönlendirme olabilir. Gibi gibi…
 8. ``Client``: 7'nci adımdaki response'ta yaptığın işlem gerçekleşir.
-
-<!-- more -->
-
-![oAuth Flow Gif](/img/oauth.gif)

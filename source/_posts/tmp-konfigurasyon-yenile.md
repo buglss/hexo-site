@@ -2,7 +2,7 @@
 title: tmp Konfigürasyon Yenile
 date: 2022-01-21 23:18:58
 tags: [ubuntu]
-categories: Faydalı Bilgiler
+categories: İşletim Sistemi
 ---
 
 # Komut

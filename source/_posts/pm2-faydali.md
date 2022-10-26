@@ -2,7 +2,7 @@
 title: pm2 Faydalı Bilgileri
 date: 2021-12-19 17:51:21
 tags: pm2
-categories: Faydalı Bilgiler
+categories: Proses
 ---
 # node-red ile Proses Başlatma
 ```bash

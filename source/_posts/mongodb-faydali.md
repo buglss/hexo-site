@@ -2,7 +2,7 @@
 title: Mongodb Faydalı Bilgileri
 date: 2021-12-19 17:42:19
 tags: mongodb
-categories: Faydalı Bilgiler
+categories: Veritabanı
 ---
 # Mongodb Servisini Enable/Startup Yapma
 Enable/Startup olup olmadığını görmek için aşağıdaki komutu çalıştır.

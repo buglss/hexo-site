@@ -2,7 +2,7 @@
 title: LVM Diskler Arası Volume Group Transferi
 date: 2022-01-22 21:06:05
 tags: [ubuntu, lvm]
-categories: Faydalı Bilgiler
+categories: İşletim Sistemi
 ---
 
 ``/data`` dizinine mount edilmiş logic volume için çalışma yapılıyor. Bu dizinin bağlandığı logic volume'ün volume group'u ``data_vg``. ``data_vg`` volume group ``/dev/sdb`` partition'a bağlı. Genişletmek istediğin volume group ``root_vg``.

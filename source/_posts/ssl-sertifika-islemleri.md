@@ -2,7 +2,7 @@
 title: SSL Sertifika İşlemleri
 date: 2022-01-22 21:55:29
 tags: [ubuntu, ssl]
-categories: Faydalı Bilgiler
+categories: Güvenlik
 ---
 
 # Private Key ve CSR

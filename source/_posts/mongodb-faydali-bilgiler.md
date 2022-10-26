@@ -2,7 +2,7 @@
 title: Mongodb Faydalı Bilgiler
 date: 2022-01-22 21:43:33
 tags: [mongodb]
-categories: Faydalı Bilgiler
+categories: Veritabanı
 ---
 
 # Export

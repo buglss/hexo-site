@@ -2,7 +2,7 @@
 title: Nginx Reverse Proxy
 date: 2022-01-25 21:42:07
 tags: [nginx, ubuntu]
-categories: Faydalı Bilgiler
+categories: Server
 ---
 
 Konfigürasyonların farklı dosyalarda tanımlanmasını tavsiye ederim. Bu şekilde daha yönetilebilir olur. Mantık olarak ``sites-available`` altında konfigürasyonlar tanımlanır. Uygulanması istenen konfigürasyonlar ``sites-enabled`` altında sembolik link ile linklenir.

@@ -2,7 +2,7 @@
 title: LVM Disk Genişlet
 date: 2022-01-22 21:16:29
 tags: [ubuntu, lvm]
-categories: Faydalı Bilgiler
+categories: İşletim Sistemi
 ---
 
 LVM disk genişletme (LVM Extend) işleminde 2 farklı yöntemden bahsedicem. Ubuntu işletim sisteminde partition tanımı sınırlıdır. Yöntemlerden birinde yeni partition yaratarak extend işlemi yapılır. Diğer yöntemde ise mevcut partition silinip yeniden oluşturularak extend işlemi yapılır.

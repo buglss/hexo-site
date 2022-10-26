@@ -28,9 +28,8 @@ date: 2022-09-08 21:25:40
                 <h4><i class="icon icon-right"></i> Metin / Text / Harf ifadeler</h4>
                 <h4><i class="icon icon-right"></i> Tek tırnak(') veya çift tırnak(") arasına yazılır</h4>
                 <h2 style="color:#77d7c6"><strong>Array</strong></h2>
-                <h4><i class="icon icon-right"></i> Liste ifadeleridir</h4>
+                <h4><i class="icon icon-right"></i> Liste ifadeleridir ve Sıralıdır</h4>
                 <h4><i class="icon icon-right"></i> Birden fazla veri tipini barındırır</h4>
-                <h4><i class="icon icon-right"></i> Sıralıdır</h4>
                 <h2 style="color:#a79cd4"><strong>Boolean</strong></h2>
                 <h4><i class="icon icon-right"></i> Doğru-Yanlış durumları ifadeler</h4>
                 <h4><i class="icon icon-right"></i> Sadece 2 değer alır</h4>
@@ -41,8 +40,7 @@ date: 2022-09-08 21:25:40
                 <h4><i class="icon icon-right"></i> Ondalıklı veya tam sayılar</h4>
                 <h2 style="color:#f06c6e"><strong>Object</strong></h2>
                 <h4><i class="icon icon-right"></i> Anahtar-Değer ilişkili ifadelerdir</h4>
-                <h4><i class="icon icon-right"></i> Sözlük de denir</h4>
-                <h4><i class="icon icon-right"></i> Sırasızdır</h4>
+                <h4><i class="icon icon-right"></i> Sözlük de denir ve Sırasızdır</h4>
                 <h4><i class="icon icon-right"></i> Anahtar indekslidir</h4>
             </div>
         </div>
@@ -120,7 +118,7 @@ date: 2022-09-08 21:25:40
             <h3><i class="icon icon-right"></i> Sağına veya soluna değer koyarak sonuç elde edilir</h3>
             <hr />
             <h3><i class="icon icon-right"></i> Atama işlemleri (=, +=, -=, *=, /=, %=, **=)</h3>
-            <h3><i class="icon icon-right"></i> Aritmetik işlemler (+, -, *, **, /, %, ++, --)</h3>
+<h3><i class="icon icon-right"></i> Aritmetik işlemler (+, -, *,**, /, %, ++, --)</h3>
             <h3><i class="icon icon-right"></i> Karşılaştırma işlemleri (==, ===, !=, !==, &gt;, &lt;, &gt;=, &lt;=)</h3>
             <h3><i class="icon icon-right"></i> Mantıksal işlemler (&&, ||, !)</h3>
             <h3><i class="icon icon-right"></i> Bit seviyesi işlemler (&, |, ~, ^, &lt;&lt;, &gt;&gt;, &gt;&gt;&gt;)</h3>
@@ -200,6 +198,49 @@ date: 2022-09-08 21:25:40
             <h3><i class="icon icon-right"></i> Döngü içinde değikenler kullanılabilir</h3>
             <h3><i class="icon icon-right"></i> Döngü içinde operatörler kullanılabilir</h3>
             <h3><i class="icon icon-right"></i> Döngü içinde koşullar kullanılabilir</h3>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+</div>
+<!-- Page End -->
+
+<!-- Section End -->
+
+<!-- Section Begin -->
+
+<!-- Page Begin -->
+<div class="slider-content shadow">
+
+# Fonksiyonlar/Function #1
+
+<hr />
+
+<div class="container-fluid">
+<div class="row row-no-gutters">
+    <div class="col-md-4">
+        <div class="p-2 mt-2">
+            <div class="img-responsive text-center">
+                <img src="/img/folio/440px-Function_machine2.svg.png" class="h-md-4" />
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="p-2 mt-2">
+            <div class="img-responsive text-center">
+                <img src="/img/folio/1.6-basicfunctionmachine.gif" class="h-md-4" />
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="p-2 mt-2">
+            <h3><i class="icon icon-right"></i> Girdisi ve çıktısı vardır</h3>
+            <h3><i class="icon icon-right"></i> Belirli bir işi veya birden çok işlemi yaparlar</h3>
+            <h3><i class="icon icon-right"></i> Yaygın olanı tek işi en iyi şekilde yapmaktır</h3>
+            <h3><i class="icon icon-right"></i> Tekrar tekrar kullanılabilirler</h3>
         </div>
     </div>
 

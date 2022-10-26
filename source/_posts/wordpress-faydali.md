@@ -2,7 +2,7 @@
 title: Wordpress Faydalı Bilgileri
 date: 2021-12-19 16:51:07
 tags: wordpress
-categories: Faydalı Bilgiler
+categories: CMS
 ---
 # Wordpress Veritabanı Yedek Alma
 Aşağıdaki komutu yedeğini almak istediğiniz veritabanı bilgilerine göre doldurarak çalıştırın.
