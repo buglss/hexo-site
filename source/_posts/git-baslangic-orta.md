@@ -137,7 +137,7 @@ Kurulum sonrası yapılması gereken ilk şey temel konfigürasyonların ayarlan
 
 ```bash
 git config --global user.name "Levent Sencer Şahin"
-git config --global user.email levent.sahin@yedas.com
+git config --global user.email l.sencer.sahin@gmail.com
 ```
 
 ## 1.5 Komutlar
